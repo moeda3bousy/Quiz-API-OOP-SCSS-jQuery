@@ -1,0 +1,13 @@
+@media screen and (max-width: 900px){
+    @function m($width){@return $width}
+    section .start{
+        width: m(90%);
+    } 
+   section .end{
+    width: m(90%);
+    }
+    section .end{
+        width: m(90%);
+        }
+} 
+

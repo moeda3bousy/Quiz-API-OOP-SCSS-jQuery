@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Files/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./Files/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/style.css">
+
+    <title>Quiz</title>
+</head>
+<body class="bg-white">
+
+<section class="one" >
+    
+    <div class="start">
+
+    <h1 class="h">Setting Your Quiz</h1>
+
+    <div class="category">
+
+<label for="c"><h5 class="h">Category</h5></label>
+
+<select class=" form-select bg-dark text-white" name="category" id="ca">
+    <option class="" value="9">General Knowledge</option>
+    <option class="" value="27">Animals</option>
+    <option class="" value="15">Video Games</option>
+    <option class="" value="23">History</option>
+    <option class="" value="21">Sports</option>
+    <option class="" value="18">Science: Computers</option>
+</select>
+
+</div>
+
+<div class="difficulty">
+
+<label for="dificulty"><label><h5 class="h">Difficulty</h5></label></label>
+<div class="form-check " id="difficulty">
+
+<div> 
+       <label class="form-check-label fw-bold">
+    <input class="form-check-input bg-dark" type="radio" id="easy" name="difficulty">
+    Easy
+</label>
+</div>
+
+<div>
+    <label class="form-check-label fw-bold">
+        <input class="form-check-input bg-dark"  checked  type="radio" id="medium" name="difficulty">
+        Medium
+    </label>
+</div>
+
+<div>   
+     <label class="form-check-label fw-bold">
+    <input class="form-check-input bg-dark"  type="radio" id="hard" name="difficulty">
+    Hard
+</label>
+</div>
+
+</div>
+</div>
+
+<input class="form-control bg-dark text-white my-4" placeholder="Number of Questions" type="number" id="count"> 
+<p class="" id="te"></p>
+    <div class="text-center">
+<button class="btn btn-dark text-white px-3" id="startbtn">Start</button>
+</div>
+</div>
+</section>
+
+<section class="two">
+    
+    <div class="quiz">
+
+ <h2 class="h">Quiz</h2>
+ <div class="alert alert-success w correct">Correct</div>
+ <div class="alert alert-danger w incorrect">Incorrect</div>
+ <h4 class="ms-auto w fw-bolder"><span id="f"></span> - <span id="s"></span> Questions</h4>
+
+
+    <div class="category">
+
+<label for="q"><h5 class="h">Q1)</h5></label>
+
+<div class="bg-dark text-white p-2 rounded " name="q" id="q"></div>
+
+
+</div>
+
+
+<div class="form-check mt-3" id="answers">
+</div>
+
+</div>
+
+    <div class="text-center  mt-4">
+<button class="btn btn-dark bg-primary text-warning fw-bold" id="submit1">Submit</button>
+</div>
+
+</div>
+</section>
+
+<section class="three">
+    
+    <div class="end">
+        <h2 class="fw-bold ms-4 pb-2 border-bottom border-2 border-dark">Finished</h2>
+<div class="d-flex flex-column  h-100 justify-content-center">
+<h2 class="score h fs-1">Score</h2>
+<h3 class="h count" id="counta"></h3>
+<button class="btn btn-dark text-white mt-4" id="tryagain">Try Again</button>
+</div>
+
+</div>
+</section>
+
+<script src="./Files/jquery/jquery-3.6.1.min.js"></script>
+<script src="./Files/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="module" src="./index.js" ></script> 
+</body>
+
+</html>

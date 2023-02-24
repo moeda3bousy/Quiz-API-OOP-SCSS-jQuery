@@ -1,0 +1,60 @@
+@import './var';
+
+@mixin t{
+    background-color:$w;
+    color: $b;
+    padding:20px;
+    width:70%;
+    height: 90%;
+    border-radius: 5%;
+}
+
+section{
+background-color:$b;
+color: $w;
+height:100vh - 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+border:2px solid $w;
+margin: 30px;
+border-radius:30px;
+
+.start{
+   @include t;
+}
+.end{
+    @include t;
+}
+.quiz{
+    @include t;
+}
+.w{
+    width: fit-content;
+}
+
+@for $i from 1 to 4{
+    @if $i==1{
+        .h{
+            font-weight: bolder;
+            text-align: center;
+            }
+   }@else{
+    .h{
+        font-weight: bolder;
+        margin: 15px 0px;
+        }
+    }
+        }
+
+
+}
+
+
+.two,.three,.correct,.incorrect{
+    display: none;
+}
+
+@import './mediaQuery';
+
+

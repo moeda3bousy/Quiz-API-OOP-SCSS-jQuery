@@ -1,0 +1,67 @@
+section {
+  background-color: black;
+  color: white;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  margin: 30px;
+  border-radius: 30px;
+}
+section .start {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 70%;
+  height: 90%;
+  border-radius: 5%;
+}
+section .end {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 70%;
+  height: 90%;
+  border-radius: 5%;
+}
+section .quiz {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 70%;
+  height: 90%;
+  border-radius: 5%;
+}
+section .w {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section .h {
+  font-weight: bolder;
+  text-align: center;
+}
+section .h {
+  font-weight: bolder;
+  margin: 15px 0px;
+}
+section .h {
+  font-weight: bolder;
+  margin: 15px 0px;
+}
+
+.two, .three, .correct, .incorrect {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  section .start {
+    width: 90%;
+  }
+  section .end {
+    width: 90%;
+  }
+  section .end {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
